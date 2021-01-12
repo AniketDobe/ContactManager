@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contact-manager">
+            <div class="contact-header">
+                <i class="fas fa-user-friends fa-5x contact-logo"></i>
+                <p class="contact-heading">Contct Manager</p>
+            </div>
+            <div class="contact-form">
+                <form name="frm" method="POST" onsubmit="submitContact(event)">
+                    <input id="name" type="text" placeholder="Enter Contact Name" required>
+                    <input id="number" type="text" name="phone" placeholder="Enter Contact Number" required>
+                    <button type="submit" onclick="return val();">Add Contact</button>
+                </form>
+            </div>
+            <div class="contact-body">
+                <!-- <div class="contact-item">
+                    <i class="fa fa-user fa-2x color-primary"></i>
+                    <div class="contact-item-info">
+                        <h4>Aniket Dobe</h4>
+                        <p>+91 222-222-2222</p>
+                    </div>
+                    <i class="fa fa-times-circle color-primary"></i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />">
+
+    <!-- contact.js-->
+    <script src="js/contact.js"></script>
+</body>
+</html>
